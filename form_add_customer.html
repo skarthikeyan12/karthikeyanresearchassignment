@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Add Customer</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cssFile.css') }}"/>
+        <style>
+            body {
+                color: white;
+            }
+        </style>
+    </head>
+    <body style='background-color:#2B35CF'>
+        <h1><u>Add Customer</u></h1>
+        <form method="POST">
+            <label>Customer First Name:</label>
+            <input type="text" name="customer_first_name">
+            <br>
+            <br>
+            <label>Customer Last Name:</label>
+            <input type="text" name="customer_last_name">
+            <br>
+            <br>
+            <label>Customer Gender:</label>
+            <input type="text" name="customer_gender">
+            <br>
+            <br>
+            <label>Customer Date of Birth:</label>
+            <input type="text" name="customer_dob">
+            <br>
+            <br>
+            <input type="submit" value="Add Customer">
+            <input type="reset" name="Clear" value="Clear">
+        </form>
+        <a href = 'http://127.0.0.1:5000' >Home Page</a>
+    </body>
+</html>

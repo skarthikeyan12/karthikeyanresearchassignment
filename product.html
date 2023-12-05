@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Product</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cssFile.css') }}"/>
+        <style>     
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+    
+            .image-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .image-container img {
+                margin: 5px; /* Optional: Add some margin between the images */
+            }
+            
+            form {
+                text-align: center;
+            }
+    </style>
+    </head>
+    <body style='background-color:#2B35CF'>
+        <td><a href="{{ url_for('Get_Product') }}">Get Product</a></td>
+        <div class='image-container'>
+            <img src='static/espresso.png' alt='espresso' width='200px' height='200px' text-align='center'>
+            <img src='static/tennis.png' alt='tennis' width='200px' height='200px' text-align='center'>
+    </tr>
+</table>
+</ul>
+<a href = 'http://127.0.0.1:5000' >Home Page</a>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Form to Get Products</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='cssFile.css') }}"/>
+  </head>
+  <body style='background-color:#2B35CF'>
+    <h1>Get Products</h1>
+    <form method='POST' action='/form_get_product'>
+        <label for="product_id">Property ID:</label>
+        <input type= 'text' name='product_id'>
+        <input type="submit" value='See Product' name="form_get_product"/>
+        <a href = 'http://127.0.0.1:5000' >Home Page</a>
+    </form>
+    
+    {% if product_info %}
+        <table border='1'>
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Product Description</th>
+                    <th>Product Price</th>
+                    <th>Product Inventory</th>
+                    <th>Product Vendor</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for product in product_info %}
+                    <tr>
+                        <td>{{ product[0] }}</td>
+                        <td>{{ product[1] }}</td>
+                        <td>{{ product[2] }}</td>
+                        <td>{{ product[3] }}</td>
+                        <td>{{ product[4] }}</td>
+                        <td>{{ product[5] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+  </body>
+</html>
+</body>
+</html>

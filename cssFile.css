@@ -1,0 +1,57 @@
+h1{color:#FFFFFF; text-align:center}
+h2{color:#FFFFFF; text-align:center; font-size:25pt}
+h3{color:#FFFFFF;font-size:12.5pt}
+table {
+        border:2px solid white;
+        width: 100%;
+        text-align: center;
+    }
+
+    td{
+        padding: 10px;
+    }
+
+    a {
+        display:inline-block;
+        border: 1px solid white;
+        padding: 8px;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        background-color:#FFADC9;
+    }
+
+    img {
+        display:block;
+        margin: auto;
+        border: 1px solid black;
+    }
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    style     
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-container img {
+        margin: 5px; /* Optional: Add some margin between the images */
+    }
+    
+    form {
+        text-align: center;
+    }
